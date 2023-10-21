@@ -1,0 +1,9 @@
+Epoch: 10000 |Batch: 019 | loss: 573.773926  | z_kl_loss: 0.479812  in_degree_dist:35.83516.   HistogramOfCycles_3:16.235552.   ReachabilityIn_2_steps:97.79363621351115.   ReachabilityIn_3_steps:102.46608347648217.   ReachabilityIn_4_steps:89.5496780327469.   RandWalksHist_2_steps:61.723557.   RandWalksHist_3_steps:157.51845603546192.   NumberOfVer:3.055584.   KL-D:9.596232414245605.   
+Reconstructed: 
+  maximum_connected_componnent:  degree: 0.0002054881387461016 clustering: 0.13497127367022488 orbits: 0.07734408725596009 Spec: 0.008826632999785478 diameter: 0.024568219376043143
+Val: 
+THE maximum_connected_componnent:  degree: 0.0039014303645055204 clustering: 0.1442198348335192 orbits: 0.07960262643345173 Spec: 0.009562498462093671 diameter: 0.016227873004983184
+ Evaluation on the Train set:
+THE maximum_connected_componnent:  degree: 0.003494394006116064 clustering: 0.1661420612615287 orbits: 0.09843751869200035 Spec: 0.008898767207111469 diameter: 0.014706472338596899
+ Evaluation on the test set:
+THE maximum_connected_componnent:  degree: 0.0026967207939441185 clustering: 0.172269399864931 orbits: 0.11238759047187052 Spec: 0.008954015658688919 diameter: 0.012550011638249092
