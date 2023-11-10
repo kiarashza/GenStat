@@ -1,0 +1,10 @@
+,GenStat,GenStat,GenStat
+,MSE,pearson,spearman
+DD,0.0008,0.8815,0.8
+IMDBBINARY,0.0135,-0.4198,0.4
+MUTAG,0.0015,0.542,0.4
+PTC,0.2208,-0.9171,-0.9487
+grid,0.1447,0.516,0.2582
+lobster,0.0023,0.86,0.8
+ogbg-molbbbp,0.1583,-0.261,-0.1054
+triangular_grid,0.1192,-0.4272,-0.2582
