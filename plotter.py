@@ -355,12 +355,12 @@ def hist_plotter(p, q, p_labal = "org_data dist", q_label="generated_dist" ):
         plt.draw()
         plt.pause(0.05)
 
-def plotG(G, type="", graph_name = "Generated Graph", file_name=None):
+def plotG(G, type="", graph_name = "Generated Graph", file_name=None,edge_w=1,node_size=20):
     plt.close(graph_name)
 
     pos = nx.spring_layout(G, iterations=1000)
     f = plt.figure(graph_name)
-    nx.draw(G, pos, node_size=20, width=1, edge_color="black")
+    nx.draw(G, pos, node_size=node_size, width=edge_w, edge_color="black")
 
     # plt.draw()
 

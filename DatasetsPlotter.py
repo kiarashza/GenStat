@@ -8,8 +8,9 @@ from data import *
 # list(np.load('PVGAErandomGraphs.npy', allow_pickle=True))
 # random.seed(10)
 # np.random.seed(10)
-path = "DataSetSamples/"
+path = "DataSetSamples/Poster"
 datasets = ["IMDBBINARY","lobster", "DD",  "MUTAG", "grid", "triangular_grid", "ogbg-molbbbp", "PTC", "QM9"]
+datasets = ["lobster","ogbg-molbbbp"]
 for dataset in datasets:
     result = list_graph_loader(dataset)
     import re
@@ -21,4 +22,4 @@ for dataset in datasets:
 
         Path(filename).mkdir(parents=True, exist_ok=True)
         plotter.plotG(G, type=dataset ,
-                      file_name=filename + "/rand_sa_" + str(i))
+                      file_name=filename + "/rand_sa_" + str(i),edge_w=3)
