@@ -37,12 +37,12 @@ parser = argparse.ArgumentParser(description='Kernel VGAE')
 
 
 parser.add_argument('-e', dest="epoch_number" , default=40000, help="Number of Epochs", type=int)
-parser.add_argument('-v', dest="Vis_step", default=4000000, help="model learning rate")
+parser.add_argument('-v', dest="Vis_step", default=1000, help="model learning rate")
 # parser.add_argument('-AE', dest="AutoEncoder", default=True, help="either update the log plot each step")
 parser.add_argument('-redraw', dest="redraw", default=False, help="either update the log plot each step")
 
 parser.add_argument('-lr', dest="lr", default=0.0003, help="model learning rate",type=float) # henerally   0.0003 works well # 0005 for pca+ diagonal varianve
-parser.add_argument('-dataset', dest="dataset", default="lobater", help="possible choices are:  mnist_01_percent,random_powerlaw_tree, PVGAErandomGraphs_dev, PVGAErandomGraphs, IMDBBINARY, IMDbMulti,wheel_graph, star, triangular_grid, multi_community, NCI1, ogbg-molbbbp, IMDbMulti, grid, community, citeseer, lobster, DD")#citeceer: ego; DD:protein
+parser.add_argument('-dataset', dest="dataset", default="lobster", help="possible choices are:  mnist_01_percent,random_powerlaw_tree, PVGAErandomGraphs_dev, PVGAErandomGraphs, IMDBBINARY, IMDbMulti,wheel_graph, star, triangular_grid, multi_community, NCI1, ogbg-molbbbp, IMDbMulti, grid, community, citeseer, lobster, DD")#citeceer: ego; DD:protein
 
 
 parser.add_argument('-NofCom', dest="num_of_comunities", default=128, help="Number of comunites",type=int)
